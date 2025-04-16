@@ -1,6 +1,5 @@
 package za.ac.iie.st10480786a1
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
@@ -8,16 +7,16 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class Dinner : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
+class MidAfternoon : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_dinner)
+        setContentView(R.layout.activity_mid_afternoon)
         val btn_exit: Button = findViewById(R.id.btn_exit)
 
         btn_exit.setOnClickListener {
             finish()
         }
+
     }
 }
